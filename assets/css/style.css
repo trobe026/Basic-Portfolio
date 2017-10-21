@@ -1,8 +1,45 @@
 /*Global CSS*/
 html {
+  position: relative;
+  min-height: 100%
+}
 
+body {
+  background: url(round.png) repeat fixed center;
 }
 
 h1 {
   font-size: 4.5em;
+}
+
+#about-me {
+  max-width: 65%;
+  float: left;
+}
+
+#sidebar {
+  max-width: 30%;
+  float: right;
+}
+
+#about-me img {
+  transform: rotate(90deg);
+  width:180px;
+  height: 200px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: gray;
+  height: 120px;
+  background-color: #333;
+  color: #efefef;
+  padding: 30px 0;
+  text-align: center;
 }
