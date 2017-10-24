@@ -1,35 +1,111 @@
 /*Global CSS*/
 html {
-  position: relative;
-  min-height: 100%
+  font-family: 'Muli', sans-serif;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 body {
-  background: url(round.png) repeat fixed center;
+  background: url(../images/round.png) repeat fixed center;
+  width: 60em;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+nav {
+  float:right;
+}
+
+ul {
+  margin-top: 25px;
+  float: right;
+}
+
+li {
+  display: inline;
+  padding: 0 5px;
+  margin-right: 20px;
 }
 
 h1 {
-  font-size: 4.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  color: #dee;
+  background-color: #333;
+  width: 40%;
+  padding: 15px 0;
+  margin-left: 100px;
+  text-align: center;
 }
+
+h2 {
+  color:#1fcecb;
+  font-size: 2em;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+h3 {
+  font-family: 'Muli', sans-serif;
+  color:#1fcecb;
+  font-size: 1.5em;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+aside {
+  background-color: #eee;
+  padding: 30px;
+  margin-top: 30px;
+  border: 1px solid #bbb;
+}
+
+p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 
 #about-me {
   max-width: 65%;
   float: left;
+  background-color: #eee;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid #bbb;
 }
 
-#sidebar {
+#nav-border {
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  padding: 0 20px;
+}
+
+.sidebar {
   max-width: 30%;
   float: right;
+
 }
 
 #about-me img {
-  transform: rotate(90deg);
-  width:180px;
-  height: 200px;
+  width: 27%;
+  float: left;
+  padding: 10px 10px;
 }
 
-.container {
-  max-width: 960px;
+.icon {
+  width: 60px;
 }
 
 footer {
