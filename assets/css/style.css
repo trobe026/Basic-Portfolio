@@ -1,22 +1,17 @@
 /*Global CSS*/
 html {
   font-family: 'Muli', sans-serif;
-  min-height: 100%;
-  min-width: 100%;
 }
 
 body {
   background: url(../images/round.png) repeat fixed center;
-  width: 60em;
+  width: 100%;
 }
 
 header {
-  background-color: #fff;
-  border-bottom: 2px solid #ddd;
-}
-
-nav {
-  float:right;
+  background-color: #078898;
+  /*border-bottom: 2px solid #bbb;*/
+  border-bottom: 7px solid #E37222;
 }
 
 ul {
@@ -33,29 +28,36 @@ li {
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 3em;
-  color: #dee;
-  background-color: #333;
-  width: 40%;
+  color: #eee;
+  background-color: #66B9BF;
+  width: 30%;
   padding: 15px 0;
   margin-left: 100px;
   text-align: center;
 }
 
 h2 {
-  color:#1fcecb;
+  color:#eee;
   font-size: 2em;
   font-family: 'Muli', sans-serif;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin: 20px 0 10px 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #E37222;
+  width: 92%;
+  text-align: left;
+
 }
 
 h3 {
   font-family: 'Muli', sans-serif;
-  color:#1fcecb;
+  color:#eee;
   font-size: 1.5em;
   font-family: 'Muli', sans-serif;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-bottom: 22px;
+  margin-left: 8px;
+  padding: 0 20px 20px 0;
+  border-bottom: 2px solid #078898;
+  width: 92%;
 }
 
 h6 {
@@ -63,10 +65,11 @@ h6 {
 }
 
 aside {
-  background-color: #eee;
+  background-color: #E37222;
   padding: 30px;
-  margin-top: 30px;
   border: 1px solid #bbb;
+  max-width: 30%;
+  float: right;
 }
 
 p {
@@ -76,26 +79,82 @@ p {
   padding: 10px;
 }
 
+footer {
+  border-top: 7px solid #E37222;
+  background-color: #474747;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  color: #E37222;
+  padding: 30px 0;
+  text-align: center;
+}
+
+a {
+  padding: 10px;
+  color: #eee;
+}
+
+a:hover {
+  background-color: #66B9BF;
+}
+
+aside a:hover {
+  background-color: #E37222;
+}
+
+form {
+  padding-left: 15px;
+  margin-bottom: :15px;
+}
+
+input {
+  padding: 5px;
+  margin: 12px;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #66B9BF;
+}
+
+/*ID CSS*/
+#contact {
+  max-width: 65%;
+  float: left;
+  background-color: #078898;
+  border: 1px solid #bbb;
+  padding-right: 13px;
+}
+
+#port-container {
+
+  margin: 36px 100px;
+  min-height: calc(100vh - 100px);
+  text-align: center;
+}
+
+#port-images {
+  max-width: 55%;
+  float: left;
+  background-color: #078898;
+  border: 1px solid #EEAA7B;
+}
+
+#bio-container {
+  margin: 36px 100px;
+}
 
 #about-me {
   max-width: 65%;
   float: left;
-  background-color: #eee;
-  margin-top: 30px;
-  margin-left: 30px;
+  background-color: #078898;
   border: 1px solid #bbb;
-}
-
-#nav-border {
-  border-left: 1px solid #555;
-  border-right: 1px solid #555;
-  padding: 0 20px;
-}
-
-.sidebar {
-  max-width: 30%;
-  float: right;
-
 }
 
 #about-me img {
@@ -104,18 +163,66 @@ p {
   padding: 10px 10px;
 }
 
-.icon {
-  width: 60px;
+#nav-border {
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  padding: 0 20px;
 }
 
-footer {
+#bio-footer {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: gray;
-  height: 120px;
-  background-color: #333;
-  color: #efefef;
-  padding: 30px 0;
-  text-align: center;
 }
+
+#contact-footer {
+  position: absolute;
+}
+
+/*Class CSS*/
+.container {
+  margin: 36px 100px;
+}
+
+.img {
+  border: .5px solid gray;
+  position: relative;
+  display: inline-block;
+  margin: 25px 25px;
+  max-width: 100%;
+  height: auto;
+  width:auto;
+  -webkit-transition: all 0.7s ease;
+          transition: all 0.7s ease;
+}
+
+.img:hover {
+  -webkit-transform:scale(1.2);
+          transform:scale(1.2);
+}
+
+.img h2 {
+  color: #078898;
+  background-color: #eee;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  padding: 5px 0;
+  font-size: 1.5em;
+  border-top: 1px solid #E37222;
+}
+
+.sidebar {
+
+}
+
+.icon {
+  width: 60px;
+  margin-left: 8px;
+  -webkit-transition: all 1.0s ease;
+          transition: all 1.0s ease;
+}
+
+.icon:hover {
+  -webkit-transform:scale(1.5);
+          transform:scale(1.5);
